@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/subject_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context=".SubjectFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#A0FFE4"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/subject_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="text"
+                android:textSize="30sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <TextView
+                android:id="@+id/type_of_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="text"/>
+
+            <TextView
+                android:id="@+id/num_of_classroom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="text" />
+
+            <TextView
+                android:id="@+id/teacher_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="text" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9DFFF4"
+        android:text="text" />
+
+</LinearLayout>
