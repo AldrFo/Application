@@ -38,19 +38,19 @@ public class PageFragment extends Fragment {
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
-        Log.d(LIFECYCLE_LOG,"pageFragment: ====onAttach()===="+ " " + page);
+        Log.d(LIFECYCLE_LOG,"pageFragment: ====onAttach()====" + " " + page);
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d(LIFECYCLE_LOG,"pageFragment: ====onCreate()===="+ " " + page);
+        Log.d(LIFECYCLE_LOG,"pageFragment: ====onCreate()====" + " " + page);
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        Log.d(LIFECYCLE_LOG,"pageFragment: ====onCreateView()===="+ " " + page);
+        Log.d(LIFECYCLE_LOG,"pageFragment: ====onCreateView()====" + " " + page);
 
         View v = inflater.inflate(R.layout.fragment_page, container, false);
 
