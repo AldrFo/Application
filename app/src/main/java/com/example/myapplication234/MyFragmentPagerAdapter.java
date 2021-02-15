@@ -7,8 +7,9 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.fragment.app.FragmentStatePagerAdapter;
 
-public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
+public class MyFragmentPagerAdapter extends FragmentStatePagerAdapter {
 
     PageFragment pageFragment;
 
@@ -22,7 +23,7 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position){
         Log.d(PageFragment.LIFECYCLE_LOG,"======================");
-        Log.d(PageFragment.LIFECYCLE_LOG,"page = " + position);
+        Log.d(PageFragment.LIFECYCLE_LOG,"getItem");
         pageFragment = PageFragment.newInstance(position);
         return pageFragment;
     }

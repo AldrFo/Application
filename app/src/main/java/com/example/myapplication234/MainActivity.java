@@ -5,8 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.graphics.pdf.PdfDocument;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
+import android.widget.FrameLayout;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -30,9 +33,11 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.timetable:
+                Log.d(PageFragment.LIFECYCLE_LOG,"select timetable");
                 loadFragment(TimetableFragment.newInstance());
                 return true;
             case R.id.bars:
+                Log.d(PageFragment.LIFECYCLE_LOG,"select bars");
                 loadFragment(BarsFragment.newInstance());
                 return true;
         }

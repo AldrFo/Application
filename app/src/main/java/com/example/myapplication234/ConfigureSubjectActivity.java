@@ -25,16 +25,12 @@ public class ConfigureSubjectActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        numOfClassRoom.setText(intent.getStringExtra(SubjectFragment.NUM_OF_CLASSROOM_EXTRA));
-        description.setText(intent.getStringExtra(SubjectFragment.DESCRIPTION_EXTRA));
-        teacherName.setText(intent.getStringExtra(SubjectFragment.TEACHER_NAME_EXTRA));
+
     }
 
     public void onClickOk(View v){
         Intent intent = new Intent(this,MainActivity.class);
-        intent.putExtra(SubjectFragment.TEACHER_NAME_EXTRA,teacherName.getText().toString());
-        intent.putExtra(SubjectFragment.DESCRIPTION_EXTRA,description.getText().toString());
-        intent.putExtra(SubjectFragment.NUM_OF_CLASSROOM_EXTRA,numOfClassRoom.getText().toString());
+
         setResult(1,intent);
         finish();
     }
